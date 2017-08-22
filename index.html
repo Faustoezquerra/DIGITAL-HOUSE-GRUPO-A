@@ -1,0 +1,50 @@
+Muestra la lista de subdirectorios y archivos de un directorio.
+
+DIR [unidad:][ruta][archivo] [/A[[:]atributos]] [/B] [/C] [/D] [/L] [/N]
+  [/O[:]orden]] [/P] [/Q] [/R] [/S] [/T[[:]fecha]] [/W] [/X] [/4]
+
+  [unidad:][ruta][nombre de archivo]
+              Especifica la unidad, el directorio y los archivos que se
+              mostrar†n.
+
+  /A          Muestra los archivos con los atributos especificados.
+  atributos    D  Directorios             R  Archivos de solo lectura
+               H  Archivos ocultos        A  Archivos para archivar
+               S  Archivos de sistema     I  No archivos indizados de contenido
+               L  Puntos de an†lisis      -  Prefijo de exclusi¢n
+  /B          Usa el formato simple (sin encabezados ni sumarios).
+  /C          Muestra el separador de miles en el tama§o de los archivos.
+              Es la opci¢n predeterminada. Use /-C para deshabilitar
+              la aparici¢n de dicho separador.
+  /D          Similar al listado ancho, pero los archivos aparecen
+              clasificados por columnas.
+  /L          Usa letras min£sculas.
+  /N          Nuevo formato de lista larga donde los nombre de archivo aparecen
+              en el lado derecho.
+  /O          Muestra los archivos seg£n el orden indicado.
+  Orden        N  Por nombre (orden alfabÇtico)
+               E  Por extensi¢n (orden alfabÇtico)
+               S  Por tama§o (orden creciente)
+               D  Por fecha y hora (el m†s antiguo primero)
+               G  Agrupar primero los directorios
+               -  Prefijo para invertir el orden
+  /P          Hace una pausa despuÇs de cada pantalla completa de informaci¢n.
+  /Q          Muestra el propietario del archivo.
+  /R          Muestra las secuencias alternativas de datos del archivo.
+  /S          Muestra los archivos del directorio especificado y todos
+              sus subdirectorios.
+  /T          Controla el campo de fecha que se mostrar† o usar† para
+              realizar la clasificaci¢n
+  fecha       C  Creaci¢n
+              A  Èltimo acceso
+              W  Èltima modificaci¢n
+  /W          Use el formato de listado ancho.
+  /X          Muestra los nombres cortos generados para los nombres de archivo
+              sin formato 8.3. El formato es el mismo que para /N, con el
+              nombre corto especificado antes del nombre largo. Si no existe
+              un nombre corto, se muestran espacios en blanco en su lugar.
+  /4          Muestra el a§o con 4 d°gitos
+
+Los modificadores se pueden preestablecer en la variable de entorno DIRCMD.
+êstos se pueden invalidar precediendo cada modificador con - (gui¢n),
+por ejemplo: /-W.
